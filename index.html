@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"  />
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Montserrat&family=PT+Sans+Caption&family=Roboto+Serif:opsz,wght@8..144,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Montserrat&family=PT+Sans+Caption&family=Pacifico&family=Righteous&family=Roboto+Serif:opsz,wght@8..144,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Montserrat&family=PT+Sans+Caption&family=Pacifico&family=Roboto+Serif:opsz,wght@8..144,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+</head>
+<body>
+<section>
+<div class="container py-5 ">
+
+
+<div id="box" class="d-none justify-content-center align-items-center">
+  <div class="snap">
+    <div class="close d-flex align-items-center justify-content-between">
+      <div class="balls d-flex">
+        <div class="ms-4 mt-3 border rounded-circle bg-danger"></div>
+        <div class="ms-4 mt-3 border rounded-circle bg-warning"></div>
+        <div class="ms-4 mt-3 border rounded-circle bg-success"></div>
+      </div>
+     <div id="closeBtn" class="me-4 close-icon"> <i class="fa-solid fa-xmark fw-bold"></i></div>
+    </div>
+    <p class="mt-3 p-icon ms-3 fw-bold lead">Site Name or Url is not valid, Please follow the rules below :</p>
+    <div class=" d-flex align-items-center">
+    
+      <i class="  fa-regular fa-circle-right p-2 text-danger "></i>
+      <p class="p-icon fw-light">Site name must contain at least 3 characters and first char must capital</p>
+    </div>
+    <div class=" d-flex align-items-center">
+      <i class="  fa-regular fa-circle-right p-2 text-danger "></i>
+      <p class="p-icon fw-light">Site URL must be a valid one</p>
+    </div>
+  </div>
+</div>
+
+
+ 
+
+
+
+
+   <div class="d-flex justify-content-center align-items-center mb-3"> <h1 class="py-2 position-relative">Bookmarker</h1></div>
+   <div class="bookmark-body  p-3">
+      <div class="d-flex justify-content-center align-items-center">
+        <h2 class="d-flex justify-content-center align-items-center">
+            <i class="fa-solid fa-bookmark"></i>
+            Bookmark your favorite sites 
+            <i class="fa-solid fa-bookmark"></i>
+        </h2>
+      </div>
+ 
+    <div class="site-name w-100 d-flex flex-column justify-content-center mt-3">
+        <label for="bookmarkName" class="pb-2 fw-semibold">
+          <i class="fa-solid fa-book-bookmark pe-2"></i>
+          Site Name</label>
+        <input type="text" placeholder="Bookmark Name" class="form-control" id="bookmarkName">
+      </div>
+      <div class="site-url w-100 d-flex flex-column justify-content-center mt-3">
+        <label for="bookmarkURL" class="pb-2 fw-semibold">
+          <i class="fa-solid fa-link pe-2"></i>Site URL</label>
+        <input type="url" placeholder="Website URL" class="form-control" id="bookmarkURL">
+      </div>
+        <button onclick="submit()" class="btn btn-danger px-5 mt-4" id="submitBtn">Submit</button>
+    </div>
+    <table class="table mt-4 text-center bg-light">
+        <thead>
+          <tr><th class="text-capitalize">index</th>
+          <th class="text-capitalize">Website Name</th>
+          <th class="text-capitalize">Visit</th>
+          <th class="text-capitalize">Delete</th>
+        </tr></thead>
+        <tbody id="tbody">
+         
+        </tbody>
+      </table>
+
+
+    
+
+</div>
+</section>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
